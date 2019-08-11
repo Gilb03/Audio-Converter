@@ -6,7 +6,9 @@
   "dependencies": {
     "babel": "^6.23.0",
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "formidable": "^1.2.1",
     "lodash": "^4.17.15",
     "next": "^9.0.3",
     "react": "^16.9.0",
@@ -17,8 +19,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node server.js",
     "build": "next build",
+    "production": "NODE_ENV=production node server.js",
     "start": "next start"
-
   },
   "author": "Gil B.",
   "license": "ISC"

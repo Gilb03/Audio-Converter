@@ -1,8 +1,8 @@
 const TagLine = () => (
-    <div style={{ 'backgroundColor': '#282828' }} className="section">
+    <div style={{ 'backgroundColor': '#A9A9A9' }} className="section">
       <div className="elevator columns">
         <div className="column is-6 is-offset-3">
-          <h3 className="title is-2">Convert Your Audio Files for Free</h3>
+          <h3 className="title is-2">Convert Your Audio Files</h3>
         </div>
       </div>
       <style jsx>{`

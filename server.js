@@ -1,11 +1,21 @@
 const express = require('express')
 const next = require('next')
+const cors = require('cors')
 const BodyParser = require('body-parser')
 const {
     join
   } = require('path')
 
-  const dev = process.env.NODE_ENV !== 'production'
+const corsOptions = {
+  origin: '*',
+  optionsSuccessStatus: 200,
+
+}  
+server.use(cors(corsOptions))
+const upload = require('./upload')
+server.post('/upload', upload)
+
+const dev = process.env.NODE_ENV !== 'production'
 const app = next({
   dev
 })

@@ -93,6 +93,41 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/about.js":
+/*!*****************************!*\
+  !*** ./components/about.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+const About = () => react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  style: {
+    'backgroundColor': '#282828'
+  },
+  className: "jsx-3719204321" + " " + "section"
+}, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: "jsx-3719204321" + " " + "elevator columns"
+}, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: "jsx-3719204321" + " " + "column is-6 is-offset-3"
+}, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
+  className: "jsx-3719204321" + " " + "title is-4"
+}, "It's tough enough to find trusty audio conversion apps that arent littered with ads and can convert larger files"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  id: "3719204321"
+}, ".elevator.jsx-3719204321{text-align:center;color:white;}.title.jsx-3719204321{color:white;font-weight:bold;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9naWxiZXJ0a2luZy9zcmMvQXVkaW8tQ29udmVydGVyL2NvbXBvbmVudHMvYWJvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBT2tCLEFBRzZCLEFBSU4sWUFDSyxNQUpMLFdBS2QsQ0FKQSIsImZpbGUiOiIvVXNlcnMvZ2lsYmVydGtpbmcvc3JjL0F1ZGlvLUNvbnZlcnRlci9jb21wb25lbnRzL2Fib3V0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgQWJvdXQgPSAoKSA9PiAoXG4gICAgPGRpdiBzdHlsZT17eyAnYmFja2dyb3VuZENvbG9yJzogJyMyODI4MjgnIH19IGNsYXNzTmFtZT1cInNlY3Rpb25cIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZWxldmF0b3IgY29sdW1uc1wiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbHVtbiBpcy02IGlzLW9mZnNldC0zXCI+XG4gICAgICAgICAgPGgzIGNsYXNzTmFtZT1cInRpdGxlIGlzLTRcIj5JdCdzIHRvdWdoIGVub3VnaCB0byBmaW5kIHRydXN0eSBhdWRpbyBjb252ZXJzaW9uIGFwcHMgdGhhdCBhcmVudCBsaXR0ZXJlZCB3aXRoIGFkcyBhbmQgY2FuIGNvbnZlcnQgbGFyZ2VyIGZpbGVzPC9oMz5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgLmVsZXZhdG9yIHtcbiAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICAgICAgY29sb3I6IHdoaXRlO1xuICAgICAgICB9XG4gICAgICAgIC50aXRsZSB7XG4gICAgICAgICAgY29sb3I6IHdoaXRlO1xuICAgICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC9kaXY+XG4gIClcbiAgXG4gIGV4cG9ydCBkZWZhdWx0IEFib3V0Il19 */\n/*@ sourceURL=/Users/gilbertking/src/Audio-Converter/components/about.js */"));
+
+/* harmony default export */ __webpack_exports__["default"] = (About);
+
+/***/ }),
+
 /***/ "./components/footer.js":
 /*!******************************!*\
   !*** ./components/footer.js ***!
@@ -241,8 +276,8 @@ const Navbar = props => react__WEBPACK_IMPORTED_MODULE_0___default.a.createEleme
   className: "navbar-start"
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
   className: "navbar-item",
-  href: "#tagline"
-}, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  href: "https://www.soundcloud.com/inthesecondshift"
+}, "Soundcloud")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
   className: "navbar-end"
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
   className: "navbar-item",
@@ -256,8 +291,8 @@ const Navbar = props => react__WEBPACK_IMPORTED_MODULE_0___default.a.createEleme
   className: "control"
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
   className: "button is-white",
-  href: "#"
-}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Convert my file"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  href: "https://www.twitter.com/_gilbproducing"
+}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Twitter"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
   className: "navbar-item"
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
   className: "field is-grouped"
@@ -297,6 +332,71 @@ const Navbar = props => react__WEBPACK_IMPORTED_MODULE_0___default.a.createEleme
 
 /***/ }),
 
+/***/ "./components/submit.js":
+/*!******************************!*\
+  !*** ./components/submit.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+const SubmitForm = () => react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  id: "signup",
+  style: {
+    'backgroundColor': '#800000'
+  },
+  className: "jsx-3979667495" + " " + "section"
+}, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: "jsx-3979667495" + " " + "columns is-mobile"
+}, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: "jsx-3979667495" + " " + "column is-half is-offset-one-quarter"
+}, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
+  className: "jsx-3979667495" + " " + "title is-4 label"
+}, "Conversion options range from ogg, wav, mp3, mp4"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
+  style: {
+    'padding': '3px',
+    'textAlign': 'center'
+  },
+  action: "/convert",
+  method: "post",
+  target: "popupwindow",
+  onsubmit: "window.open('https://tinyletter.com/workflow-wednesday', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true",
+  className: "jsx-3979667495"
+}, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: "jsx-3979667495" + " " + "field is-grouped"
+}, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: "jsx-3979667495" + " " + "control is-expanded"
+}, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+  type: "email",
+  name: "email",
+  id: "tlemail",
+  placeholder: "Your file here",
+  className: "jsx-3979667495" + " " + "input"
+}), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+  type: "hidden",
+  value: "1",
+  name: "embed",
+  className: "jsx-3979667495"
+})), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: "jsx-3979667495" + " " + "control"
+}, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+  className: "jsx-3979667495" + " " + "button is-white"
+}, "Convert")))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  id: "3979667495"
+}, ".title.jsx-3979667495{color:white;text-align:center;font-weight:bold;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9naWxiZXJ0a2luZy9zcmMvQXVkaW8tQ29udmVydGVyL2NvbXBvbmVudHMvc3VibWl0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXNCa0IsQUFHdUIsWUFDTSxrQkFDRCxpQkFDbkIiLCJmaWxlIjoiL1VzZXJzL2dpbGJlcnRraW5nL3NyYy9BdWRpby1Db252ZXJ0ZXIvY29tcG9uZW50cy9zdWJtaXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBTdWJtaXRGb3JtID0gKCkgPT4gKFxuICAgIDxkaXYgaWQ9XCJzaWdudXBcIiBzdHlsZT17eyAnYmFja2dyb3VuZENvbG9yJzogJyM4MDAwMDAnIH19IGNsYXNzTmFtZT1cInNlY3Rpb25cIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29sdW1ucyBpcy1tb2JpbGVcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb2x1bW4gaXMtaGFsZiBpcy1vZmZzZXQtb25lLXF1YXJ0ZXJcIj5cbiAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwidGl0bGUgaXMtNCBsYWJlbFwiPkNvbnZlcnNpb24gb3B0aW9ucyByYW5nZSBmcm9tIG9nZywgd2F2LCBtcDMsIG1wNDwvaDM+XG4gICAgICAgICAgPGZvcm0gc3R5bGU9e3sgJ3BhZGRpbmcnOiAnM3B4JywgJ3RleHRBbGlnbic6ICdjZW50ZXInIH19IGFjdGlvbj1cIi9jb252ZXJ0XCIgbWV0aG9kPVwicG9zdFwiIHRhcmdldD1cInBvcHVwd2luZG93XCIgb25zdWJtaXQ9XCJ3aW5kb3cub3BlbignaHR0cHM6Ly90aW55bGV0dGVyLmNvbS93b3JrZmxvdy13ZWRuZXNkYXknLCAncG9wdXB3aW5kb3cnLCAnc2Nyb2xsYmFycz15ZXMsd2lkdGg9ODAwLGhlaWdodD02MDAnKTtyZXR1cm4gdHJ1ZVwiPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmaWVsZCBpcy1ncm91cGVkXCI+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udHJvbCBpcy1leHBhbmRlZFwiPlxuICAgICAgICAgICAgICAgIDxpbnB1dCBjbGFzc05hbWU9XCJpbnB1dFwiIHR5cGU9XCJlbWFpbFwiIG5hbWU9XCJlbWFpbFwiIGlkPVwidGxlbWFpbFwiIHBsYWNlaG9sZGVyPVwiWW91ciBmaWxlIGhlcmVcIiAvPlxuICAgICAgICAgICAgICAgIDxpbnB1dCB0eXBlPVwiaGlkZGVuXCIgdmFsdWU9XCIxXCIgbmFtZT1cImVtYmVkXCIgLz5cbiAgICAgICAgICAgICAgPC9kaXY+IFxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRyb2xcIj5cbiAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT1cImJ1dHRvbiBpcy13aGl0ZVwiPkNvbnZlcnQ8L2J1dHRvbj5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIHsvKiA8cD48bGFiZWwgZm9yPVwidGxlbWFpbFwiPkJlIE5vdGlmaWVkPC9sYWJlbD48L3A+XG4gICAgICAgICAgICA8cD48aW5wdXQgdHlwZT1cInRleHRcIiBzdHlsZT17eyAnd2lkdGgnOiAnMTQwcHgnIH19IG5hbWU9XCJlbWFpbFwiIGlkPVwidGxlbWFpbFwiIC8+PC9wPlxuICAgICAgICAgICAgPGlucHV0IHR5cGU9XCJoaWRkZW5cIiB2YWx1ZT1cIjFcIiBuYW1lPVwiZW1iZWRcIiAvPlxuICAgICAgICAgICAgPGlucHV0IHR5cGU9XCJzdWJtaXRcIiB2YWx1ZT1cIlN1YnNjcmliZVwiIC8+ICovfVxuICAgICAgICAgIDwvZm9ybT5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgLnRpdGxlIHtcbiAgICAgICAgICBjb2xvcjogd2hpdGU7XG4gICAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC9kaXY+XG4gIClcbiAgXG4gIGV4cG9ydCBkZWZhdWx0IFN1Ym1pdEZvcm1cbiAgIl19 */\n/*@ sourceURL=/Users/gilbertking/src/Audio-Converter/components/submit.js */"));
+
+/* harmony default export */ __webpack_exports__["default"] = (SubmitForm);
+
+/***/ }),
+
 /***/ "./components/tagline.js":
 /*!*******************************!*\
   !*** ./components/tagline.js ***!
@@ -315,7 +415,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const TagLine = () => react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
   style: {
-    'backgroundColor': '#282828'
+    'backgroundColor': '#A9A9A9'
   },
   className: "jsx-2843645134" + " " + "section"
 }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -324,9 +424,9 @@ const TagLine = () => react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement
   className: "jsx-2843645134" + " " + "column is-6 is-offset-3"
 }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
   className: "jsx-2843645134" + " " + "title is-2"
-}, "Convert Your Audio Files for Free"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+}, "Convert Your Audio Files"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
   id: "2843645134"
-}, ".elevator.jsx-2843645134{text-align:center;color:white;}.title.jsx-2843645134{color:white;font-weight:bold;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9naWxiZXJ0a2luZy9zcmMvQXVkaW8tQ29udmVydGVyL2NvbXBvbmVudHMvdGFnbGluZS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFPa0IsQUFHNkIsQUFJUixZQUNLLE1BSkgsV0FLZCxDQUpBIiwiZmlsZSI6Ii9Vc2Vycy9naWxiZXJ0a2luZy9zcmMvQXVkaW8tQ29udmVydGVyL2NvbXBvbmVudHMvdGFnbGluZS5qcyIsInNvdXJjZXNDb250ZW50IjpbImNvbnN0IFRhZ0xpbmUgPSAoKSA9PiAoXG4gICAgPGRpdiBzdHlsZT17eyAnYmFja2dyb3VuZENvbG9yJzogJyMyODI4MjgnIH19IGNsYXNzTmFtZT1cInNlY3Rpb25cIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZWxldmF0b3IgY29sdW1uc1wiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbHVtbiBpcy02IGlzLW9mZnNldC0zXCI+XG4gICAgICAgICAgPGgzIGNsYXNzTmFtZT1cInRpdGxlIGlzLTJcIj5Db252ZXJ0IFlvdXIgQXVkaW8gRmlsZXMgZm9yIEZyZWU8L2gzPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAuZWxldmF0b3Ige1xuICAgICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICAgICAgICBjb2xvcjogd2hpdGU7XG4gICAgICAgIH1cbiAgICAgICAgLnRpdGxlIHtcbiAgICAgICAgY29sb3I6IHdoaXRlO1xuICAgICAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuICApXG4gIFxuICBleHBvcnQgZGVmYXVsdCBUYWdMaW5lIl19 */\n/*@ sourceURL=/Users/gilbertking/src/Audio-Converter/components/tagline.js */"));
+}, ".elevator.jsx-2843645134{text-align:center;color:white;}.title.jsx-2843645134{color:white;font-weight:bold;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9naWxiZXJ0a2luZy9zcmMvQXVkaW8tQ29udmVydGVyL2NvbXBvbmVudHMvdGFnbGluZS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFPa0IsQUFHNkIsQUFJUixZQUNLLE1BSkgsV0FLZCxDQUpBIiwiZmlsZSI6Ii9Vc2Vycy9naWxiZXJ0a2luZy9zcmMvQXVkaW8tQ29udmVydGVyL2NvbXBvbmVudHMvdGFnbGluZS5qcyIsInNvdXJjZXNDb250ZW50IjpbImNvbnN0IFRhZ0xpbmUgPSAoKSA9PiAoXG4gICAgPGRpdiBzdHlsZT17eyAnYmFja2dyb3VuZENvbG9yJzogJyNBOUE5QTknIH19IGNsYXNzTmFtZT1cInNlY3Rpb25cIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZWxldmF0b3IgY29sdW1uc1wiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbHVtbiBpcy02IGlzLW9mZnNldC0zXCI+XG4gICAgICAgICAgPGgzIGNsYXNzTmFtZT1cInRpdGxlIGlzLTJcIj5Db252ZXJ0IFlvdXIgQXVkaW8gRmlsZXM8L2gzPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAuZWxldmF0b3Ige1xuICAgICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICAgICAgICBjb2xvcjogd2hpdGU7XG4gICAgICAgIH1cbiAgICAgICAgLnRpdGxlIHtcbiAgICAgICAgY29sb3I6IHdoaXRlO1xuICAgICAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuICApXG4gIFxuICBleHBvcnQgZGVmYXVsdCBUYWdMaW5lIl19 */\n/*@ sourceURL=/Users/gilbertking/src/Audio-Converter/components/tagline.js */"));
 
 /* harmony default export */ __webpack_exports__["default"] = (TagLine);
 
@@ -1011,14 +1111,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/header */ "./components/header.js");
 /* harmony import */ var _components_tagline__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/tagline */ "./components/tagline.js");
 /* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/footer */ "./components/footer.js");
-/* harmony import */ var _components_navbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/navbar */ "./components/navbar.js");
+/* harmony import */ var _components_about__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/about */ "./components/about.js");
+/* harmony import */ var _components_navbar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/navbar */ "./components/navbar.js");
+/* harmony import */ var _components_submit__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/submit */ "./components/submit.js");
 
 
 
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = (() => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_navbar__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_tagline__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_footer__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
+ // import Convert from './convert'
+
+
+/* harmony default export */ __webpack_exports__["default"] = (() => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_navbar__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_tagline__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_submit__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_about__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_footer__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
 
 /***/ }),
 
