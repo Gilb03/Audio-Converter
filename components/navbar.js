@@ -13,8 +13,13 @@ const Navbar = (props) => (
   <p className="control">
               <a
                 className="button is-white"
-                href="#">
+                href="#submit">
                 <span>Convert my file</span>
+              </a>
+              <a
+                className="button is-white"
+                href="https://soundcloud.com/user-403367525">
+                <span>Soundcloud</span>
               </a>
   </p>
           </div>
