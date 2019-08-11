@@ -222,7 +222,7 @@ var SubmitForm = function SubmitForm() {
       'padding': '3px',
       'textAlign': 'center'
     },
-    action: "/upload",
+    action: "../api/index",
     method: "post",
     target: "popupwindow",
     onSubmit: "window.open('converting, 'popupwindow', 'scrollbars=yes,width=800,height=600');return true",
@@ -232,9 +232,8 @@ var SubmitForm = function SubmitForm() {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "jsx-3979667495" + " " + "control is-expanded"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
-    type: "email",
-    name: "email",
-    id: "tlemail",
+    name: "file",
+    id: "",
     placeholder: "Your file here",
     className: "jsx-3979667495" + " " + "input"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
@@ -246,9 +245,51 @@ var SubmitForm = function SubmitForm() {
     className: "jsx-3979667495" + " " + "control"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
     className: "jsx-3979667495" + " " + "button is-white"
-  }, "Convert")))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  }, "Convert It"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("select", {
+    id: "ftype",
+    "class": "form-control",
+    name: "ftype",
+    className: "jsx-3979667495"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("optgroup", {
+    label: "audio",
+    className: "jsx-3979667495"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+    value: "7",
+    className: "jsx-3979667495"
+  }, ".aac"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+    value: "8",
+    className: "jsx-3979667495"
+  }, ".m4a"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+    value: "4",
+    selected: "selected",
+    className: "jsx-3979667495"
+  }, ".mp3 (128kb)"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+    value: "5",
+    className: "jsx-3979667495"
+  }, ".mp3 (256kb)"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+    value: "6",
+    className: "jsx-3979667495"
+  }, ".mp3 (320kb)")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("optgroup", {
+    label: "video",
+    className: "jsx-3979667495"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+    value: "10",
+    className: "jsx-3979667495"
+  }, ".3gp"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+    value: "2",
+    className: "jsx-3979667495"
+  }, ".mp4"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+    value: "3",
+    className: "jsx-3979667495"
+  }, ".mkv"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+    value: "9",
+    className: "jsx-3979667495"
+  }, ".f4v"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
+    value: "1",
+    className: "jsx-3979667495"
+  }, ".webm")))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "3979667495"
-  }, ".title.jsx-3979667495{color:white;text-align:center;font-weight:bold;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9naWxiZXJ0a2luZy9zcmMvQXVkaW8tQ29udmVydGVyL2NvbXBvbmVudHMvc3VibWl0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWtCa0IsQUFHdUIsWUFDTSxrQkFDRCxpQkFDbkIiLCJmaWxlIjoiL1VzZXJzL2dpbGJlcnRraW5nL3NyYy9BdWRpby1Db252ZXJ0ZXIvY29tcG9uZW50cy9zdWJtaXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBTdWJtaXRGb3JtID0gKCkgPT4gKFxuICAgIDxkaXYgaWQ9XCJzdWJtaXRcIiBzdHlsZT17eyAnYmFja2dyb3VuZENvbG9yJzogJyM1ZTU5NDknIH19IGNsYXNzTmFtZT1cInNlY3Rpb25cIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29sdW1ucyBpcy1tb2JpbGVcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb2x1bW4gaXMtaGFsZiBpcy1vZmZzZXQtb25lLXF1YXJ0ZXJcIj5cbiAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwidGl0bGUgaXMtNCBsYWJlbFwiPmNob29zZSBjb252ZXJzaW9uIHR5cGVzIGZyb20gb2dnLCB3YXYsIG1wNCwgYW5kIG1wMzwvaDM+XG4gICAgICAgICAgPGZvcm0gc3R5bGU9e3sgJ3BhZGRpbmcnOiAnM3B4JywgJ3RleHRBbGlnbic6ICdjZW50ZXInIH19IGFjdGlvbj1cIi91cGxvYWRcIiBtZXRob2Q9XCJwb3N0XCIgdGFyZ2V0PVwicG9wdXB3aW5kb3dcIiBvblN1Ym1pdD1cIndpbmRvdy5vcGVuKCdjb252ZXJ0aW5nLCAncG9wdXB3aW5kb3cnLCAnc2Nyb2xsYmFycz15ZXMsd2lkdGg9ODAwLGhlaWdodD02MDAnKTtyZXR1cm4gdHJ1ZVwiPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmaWVsZCBpcy1ncm91cGVkXCI+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udHJvbCBpcy1leHBhbmRlZFwiPlxuICAgICAgICAgICAgICAgIDxpbnB1dCBjbGFzc05hbWU9XCJpbnB1dFwiIHR5cGU9XCJlbWFpbFwiIG5hbWU9XCJlbWFpbFwiIGlkPVwidGxlbWFpbFwiIHBsYWNlaG9sZGVyPVwiWW91ciBmaWxlIGhlcmVcIiAvPlxuICAgICAgICAgICAgICAgIDxpbnB1dCB0eXBlPVwiZmlsZVwiIHZhbHVlPVwiMVwiIG5hbWU9XCJlbWJlZFwiIC8+XG4gICAgICAgICAgICAgIDwvZGl2PiBcbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250cm9sXCI+XG4gICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9XCJidXR0b24gaXMtd2hpdGVcIj5Db252ZXJ0PC9idXR0b24+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPC9mb3JtPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAudGl0bGUge1xuICAgICAgICAgIGNvbG9yOiB3aGl0ZTtcbiAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cbiAgKVxuICBcbiAgZXhwb3J0IGRlZmF1bHQgU3VibWl0Rm9ybSJdfQ== */\n/*@ sourceURL=/Users/gilbertking/src/Audio-Converter/components/submit.js */"));
+  }, ".title.jsx-3979667495{color:white;text-align:center;font-weight:bold;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9naWxiZXJ0a2luZy9zcmMvQXVkaW8tQ29udmVydGVyL2NvbXBvbmVudHMvc3VibWl0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWlDa0IsQUFHdUIsWUFDTSxrQkFDRCxpQkFDbkIiLCJmaWxlIjoiL1VzZXJzL2dpbGJlcnRraW5nL3NyYy9BdWRpby1Db252ZXJ0ZXIvY29tcG9uZW50cy9zdWJtaXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBTdWJtaXRGb3JtID0gKCkgPT4gKFxuICAgIDxkaXYgaWQ9XCJzdWJtaXRcIiBzdHlsZT17eyAnYmFja2dyb3VuZENvbG9yJzogJyM1ZTU5NDknIH19IGNsYXNzTmFtZT1cInNlY3Rpb25cIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29sdW1ucyBpcy1tb2JpbGVcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb2x1bW4gaXMtaGFsZiBpcy1vZmZzZXQtb25lLXF1YXJ0ZXJcIj5cbiAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwidGl0bGUgaXMtNCBsYWJlbFwiPmNob29zZSBjb252ZXJzaW9uIHR5cGVzIGZyb20gb2dnLCB3YXYsIG1wNCwgYW5kIG1wMzwvaDM+XG4gICAgICAgICAgPGZvcm0gc3R5bGU9e3sgJ3BhZGRpbmcnOiAnM3B4JywgJ3RleHRBbGlnbic6ICdjZW50ZXInIH19IGFjdGlvbj1cIi4uL2FwaS9pbmRleFwiIG1ldGhvZD1cInBvc3RcIiB0YXJnZXQ9XCJwb3B1cHdpbmRvd1wiIG9uU3VibWl0PVwid2luZG93Lm9wZW4oJ2NvbnZlcnRpbmcsICdwb3B1cHdpbmRvdycsICdzY3JvbGxiYXJzPXllcyx3aWR0aD04MDAsaGVpZ2h0PTYwMCcpO3JldHVybiB0cnVlXCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZpZWxkIGlzLWdyb3VwZWRcIj5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250cm9sIGlzLWV4cGFuZGVkXCI+XG4gICAgICAgICAgICAgICAgPGlucHV0IGNsYXNzTmFtZT1cImlucHV0XCIgIG5hbWU9XCJmaWxlXCIgaWQ9XCJcIiBwbGFjZWhvbGRlcj1cIllvdXIgZmlsZSBoZXJlXCIgLz5cbiAgICAgICAgICAgICAgICA8aW5wdXQgdHlwZT1cImZpbGVcIiB2YWx1ZT1cIjFcIiBuYW1lPVwiZW1iZWRcIiAvPlxuICAgICAgICAgICAgICA8L2Rpdj4gXG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udHJvbFwiPlxuICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwiYnV0dG9uIGlzLXdoaXRlXCI+Q29udmVydCBJdDwvYnV0dG9uPlxuICAgICAgICA8c2VsZWN0IGlkPVwiZnR5cGVcIiBjbGFzcz1cImZvcm0tY29udHJvbFwiIG5hbWU9XCJmdHlwZVwiPlxuICAgICAgICAgICAgPG9wdGdyb3VwIGxhYmVsPVwiYXVkaW9cIj5cbiAgICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPVwiN1wiPi5hYWM8L29wdGlvbj5cbiAgICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPVwiOFwiPi5tNGE8L29wdGlvbj5cbiAgICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPVwiNFwiIHNlbGVjdGVkPVwic2VsZWN0ZWRcIj4ubXAzICgxMjhrYik8L29wdGlvbj5cbiAgICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPVwiNVwiPi5tcDMgKDI1NmtiKTwvb3B0aW9uPlxuICAgICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9XCI2XCI+Lm1wMyAoMzIwa2IpPC9vcHRpb24+XG4gICAgICAgICAgICAgICAgPC9vcHRncm91cD48b3B0Z3JvdXAgbGFiZWw9XCJ2aWRlb1wiPlxuICAgICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9XCIxMFwiPi4zZ3A8L29wdGlvbj5cbiAgICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPVwiMlwiPi5tcDQ8L29wdGlvbj5cbiAgICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPVwiM1wiPi5ta3Y8L29wdGlvbj5cbiAgICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPVwiOVwiPi5mNHY8L29wdGlvbj5cbiAgICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPVwiMVwiPi53ZWJtPC9vcHRpb24+XG4gICAgICAgICAgICA8L29wdGdyb3VwPiBcbiAgICAgICAgPC9zZWxlY3Q+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPC9mb3JtPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAudGl0bGUge1xuICAgICAgICAgIGNvbG9yOiB3aGl0ZTtcbiAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cbiAgKVxuICBcbiAgZXhwb3J0IGRlZmF1bHQgU3VibWl0Rm9ybSJdfQ== */\n/*@ sourceURL=/Users/gilbertking/src/Audio-Converter/components/submit.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SubmitForm);
